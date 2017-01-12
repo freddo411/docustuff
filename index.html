@@ -1,10 +1,33 @@
 <!DOCTYPE html>
+<head>
+<title>Power Form Success</title>
+<script type="text/javascript">
+  var imageURLs = [
+     	"arrow.gif",
+		"baby.gif",
+		"ben.gif",
+		"dance.gif",
+		"jimcarrey.gif",
+		"leo.gif",
+		"success-kid.gif",
+		"weirdo.gif",
+		"win.gif",
+  ];
+  function getImageTag() {
+    var img = '<img src=\"./successgifs/';
+    var randomIndex = Math.floor(Math.random() * imageURLs.length);
+    img += imageURLs[randomIndex];
+    img += '\" alt=\"Some alt text\"/>';
+    return img;
+  }
+</script>
+</head>
 <html dir="ltr" lang="en-US">
     <body>
 
 	<h1> Success! </h1>
 
-	<img src="jimcarrey.gif" />
+	<script type="text/javascript"> document.write(getImageTag()); </script>
 
     </body>
 </html>
